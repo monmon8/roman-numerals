@@ -59,4 +59,16 @@ describe("converterToRoman", () => {
     //  Assert
     expect(converterToRoman(50)).toBe("L");
   });
+  it("should convert 40 to XL", () => {
+    // Act
+    const result = converterToRoman(40);
+    //  Assert
+    expect(converterToRoman(40)).toBe("XL");
+  });
+  it("should convert 10 to L", () => {
+    // Act
+    const result = converterToRoman(50);
+    //  Assert
+    expect(converterToRoman(10)).toBe("X");
+  });
 });

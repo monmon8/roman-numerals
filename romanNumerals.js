@@ -28,6 +28,14 @@ export function converterToRoman(num) {
         result += "L";
         num -= 50;
       }
+    } else if (num >= 10) {
+      if (num >= 40) {
+        result += "XL";
+        num -= 40;
+      } else {
+        result += "X";
+        num -= 10;
+      }
     }
     return result;
   }
