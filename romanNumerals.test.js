@@ -35,4 +35,16 @@ describe("converterToRoman", () => {
     //  Assert
     expect(converterToRoman(900)).toBe("CM");
   });
+  it("should convert 400 to CD", () => {
+    // Act
+    const result = converterToRoman(400);
+    //  Assert
+    expect(converterToRoman(400)).toBe("CD");
+  });
+  it("should convert 100 to C", () => {
+    // Act
+    const result = converterToRoman(100);
+    //  Assert
+    expect(converterToRoman(100)).toBe("C");
+  });
 });

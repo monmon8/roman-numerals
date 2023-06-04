@@ -12,6 +12,14 @@ export function converterToRoman(num) {
         result += "D";
         num -= 500;
       }
+    } else if (num >= 100) {
+      if (num >= 400) {
+        result += "CD";
+        num -= 400;
+      } else {
+        result += "C";
+        num -= 100;
+      }
     }
     return result;
   }
