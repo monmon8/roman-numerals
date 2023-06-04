@@ -1,5 +1,8 @@
 export function converterToRoman(num) {
   let result = "";
+  if (num === 0) {
+    return "";
+  }
   while (num) {
     if (num >= 1000) {
       result += "M";
