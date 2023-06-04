@@ -20,6 +20,14 @@ export function converterToRoman(num) {
         result += "C";
         num -= 100;
       }
+    } else if (num >= 50) {
+      if (num >= 90) {
+        result += "XC";
+        num -= 90;
+      } else {
+        result += "L";
+        num -= 50;
+      }
     }
     return result;
   }
