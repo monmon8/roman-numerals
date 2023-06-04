@@ -23,4 +23,16 @@ describe("converterToRoman", () => {
     //  Assert
     expect(converterToRoman(1000)).toBe("M");
   });
+  it("should convert 501 to D", () => {
+    // Act
+    const result = converterToRoman(501);
+    //  Assert
+    expect(converterToRoman(500)).toBe("D");
+  });
+  it("should convert 900 to CM", () => {
+    // Act
+    const result = converterToRoman(501);
+    //  Assert
+    expect(converterToRoman(900)).toBe("CM");
+  });
 });
