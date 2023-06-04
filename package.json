@@ -1,0 +1,17 @@
+{
+  "name": "roman-numerals",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/monmon8/roman-numerals.git",
+  "author": "<imaneben8@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
