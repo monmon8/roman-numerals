@@ -44,7 +44,16 @@ export function converterToRoman(num) {
         result += "V";
         num -= 5;
       }
+    } else {
+      if (num >= 4) {
+        result += "IV";
+        num -= 4;
+      } else {
+        result += "I";
+        num -= 1;
+      }
     }
+
     return result;
   }
 }
