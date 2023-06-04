@@ -71,4 +71,16 @@ describe("converterToRoman", () => {
     //  Assert
     expect(converterToRoman(10)).toBe("X");
   });
+  it("should convert 9 to IX", () => {
+    // Act
+    const result = converterToRoman(9);
+    //  Assert
+    expect(converterToRoman(9)).toBe("IX");
+  });
+  it("should convert 5 to V", () => {
+    // Act
+    const result = converterToRoman(5);
+    //  Assert
+    expect(converterToRoman(5)).toBe("V");
+  });
 });

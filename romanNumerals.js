@@ -36,6 +36,14 @@ export function converterToRoman(num) {
         result += "X";
         num -= 10;
       }
+    } else if (num >= 5) {
+      if (num >= 9) {
+        result += "IX";
+        num -= 9;
+      } else {
+        result += "V";
+        num -= 5;
+      }
     }
     return result;
   }
